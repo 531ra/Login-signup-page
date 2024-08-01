@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".entercode">
+
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="325dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/edittext"
+        android:elevation="10dp"
+        android:fontFamily="@font/kurale"
+        android:hint="enter code"
+        android:inputType="number"
+        android:paddingStart="18dp"
+        android:shadowColor="@color/black"
+
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintBottom_toBottomOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="325dp"
+        android:layout_height="66dp"
+        android:background="@drawable/edittext"
+        android:elevation="10dp"
+        android:fontFamily="@font/kurale"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:shadowColor="@color/black"
+
+
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintBottom_toBottomOf="@+id/repeat_password"
+        app:layout_constraintEnd_toEndOf="@+id/code"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/code"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+    <EditText
+        android:id="@+id/repeat_password"
+        android:fontFamily="@font/kurale"
+        android:shadowDy="4"
+        android:shadowColor="@color/black"
+        android:elevation="10dp"
+        android:layout_width="325dp"
+        android:textColorHint="#777777"
+        android:paddingStart="18dp"
+        android:inputType="textPassword"
+        android:hint="Repeast_password"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.3"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext"
+        android:layout_height="66dp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/password"/>
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:textColor="@color/white"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+
+        android:backgroundTint="#312222"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="confirm reset"
+        android:fontFamily="@font/kurale"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_password"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/repeat_password"
+        app:layout_constraintEnd_toEndOf="@+id/repeat_password"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
